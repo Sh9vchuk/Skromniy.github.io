@@ -1,0 +1,42 @@
+.we{
+    position: relative;
+    margin-top: 50px;
+    height: 675px;
+
+    &-item1{
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        width: 100%;
+        max-width: 791px;
+        height: 475px;
+        padding: 50px;
+        background-color: #fff;
+        border-right: 15px solid #44C697;
+        border-radius: 0px 3px 3px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span{
+            color: #44C697;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            color: #1E2E36;
+            margin-top: 15px;
+        }
+    }
+
+    &-item2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+}

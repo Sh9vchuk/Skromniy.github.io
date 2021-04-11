@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import 'helpers';
+@import 'header';
+@import 'main';
+@import 'benefits';
+@import 'category';
+@import 'we';
+@import 'question';
+@import 'footer';
+@import 'media';

@@ -1,0 +1,141 @@
+header>div {
+    border-bottom:  1px solid #1e2e364b;
+}
+
+.navFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+
+    &-item{
+        display: flex;
+
+        &__socLinks{
+            margin-left: 30px;
+            &:first-of-type{
+                margin-left: 15px;
+            }
+        }
+
+        &__contacts{
+            margin-left: 66px;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin: 0 10px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    &-item-second {
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: inherit;
+            line-height: 22,5px;
+
+            p {
+                font-size: 18px;
+                font-weight: 700;
+                transition: border-bottom 0.3s;
+                border-bottom: 3px solid transparent;
+
+                &:hover{
+                    border-bottom: 3px solid #44C697;
+                }
+            }
+        
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////
+
+.navSecond{
+    display: flex;
+    height: 105px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navSecond-item{
+    display: flex;
+
+
+    &__links{
+        position: relative;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        flex-shrink: 2;
+
+        &:first-of-type{
+            margin: 0;
+        }
+
+        span{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        img{
+            margin-left: 8px;
+        }
+
+        &:hover{
+            .navSecond-item__links-list{
+                visibility: visible;
+                opacity: 1;
+                transition: opacity 0.5s;
+            }
+        }
+        
+        &-list{
+            position: absolute;
+            padding: 30px;
+            top: 20px;
+            background-color: #44c69683;
+            visibility: hidden;
+            opacity: 0;
+            border-radius: 20px;
+
+            ul{
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        color: inherit;
+                        text-decoration: none;
+                        transition: color 0.3s;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__shopping{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+
+        span{
+            font-size: 18px;
+            font-weight: 700;
+            margin-left: 7px;
+        }
+    }
+}
+
